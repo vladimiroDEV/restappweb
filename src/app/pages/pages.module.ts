@@ -8,10 +8,10 @@ import { ThemeModule }  from '../theme/theme.module';
 import { ManageMenuComponent } from './manage-menu/manage-menu.component';
 import { HomeComponent } from './home/home.component'
 import { MaterialModule } from '@angular/material';
-import { NavMenuComponent } from './manage-menu/nav-menu/nav-menu.component';
 import { TestComponent } from './test/test.component';
 import { AutoGrowDirective } from './test/auto-grow.directive';
 import { DetailMenuComponent } from './manage-menu/detail-menu/detail-menu.component';
+import {HttpModule} from '@angular/http'
 
 
 
@@ -26,6 +26,7 @@ const appRoutes: Routes = [
   imports: [
     CommonModule,
     ThemeModule,
+    HttpModule,
     MaterialModule.forRoot(),
     
     
@@ -39,7 +40,6 @@ const appRoutes: Routes = [
     PagesComponent,
     ManageMenuComponent,
     HomeComponent,
-    NavMenuComponent,
     TestComponent,
     AutoGrowDirective,
     DetailMenuComponent,

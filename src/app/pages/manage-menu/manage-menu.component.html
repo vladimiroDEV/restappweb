@@ -2,11 +2,21 @@
     <div class="row">
         <div class="col-md-2">
             <h4>{{title}}</h4>
-            <nav-menu></nav-menu>
+            <nav class="nav-listMenu-container">
+
+                <div *ngIf="isLoading">
+                    <i class="fa fa-spinner fa-spin fa-3x"></i>
+                </div>
+                <ul>
+                    <li *ngFor="let menu of menuList" (click)="selectMenu(menu)" class="nav-menu-element">
+                        {{menu.Title}}
+                    </li>
+                </ul>
+            </nav>
 
         </div>
         <div class="col-md-10">
-            main content
+            <detail-menu></detail-menu>
         </div>
     </div>
 </div>

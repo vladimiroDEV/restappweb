@@ -4,3 +4,26 @@
         list-style-type: none;
     }
 }
+
+.nav-listMenu-container {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        padding: 5px 0 5px 5px;
+    }
+    li:hover {
+        cursor: pointer;
+        background-color: #1dd;
+    }
+}
+
+.nav-menu-element {
+    //background-color: #ddd;
+    list-style-type: none;
+}
+
+.selected-menu {
+    background-color: #ddd;
+}
