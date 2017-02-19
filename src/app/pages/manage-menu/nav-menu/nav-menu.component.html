@@ -1,0 +1,5 @@
+<nav class="nav-listMenu-container">
+    <ul>
+        <li *ngFor="let menu of menuList" (click)="selectMenu(menu)" class="nav-menu-element" [class.selected-menu]="menu == isSelected">{{menu.MenuName}}</li>
+    </ul>
+</nav>
