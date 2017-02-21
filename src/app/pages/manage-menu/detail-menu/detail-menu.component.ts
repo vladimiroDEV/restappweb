@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {Menu} from '../classes/Menu'
+import {SectionMenu} from '../classes/SectionMenu'
 
 @Component({
   selector: 'detail-menu',
@@ -7,7 +9,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class DetailMenuComponent implements OnInit {
-@Input() selectedMenu;
+@Input() 
+sections: SectionMenu[];
   constructor() { }
 
   ngOnInit() {

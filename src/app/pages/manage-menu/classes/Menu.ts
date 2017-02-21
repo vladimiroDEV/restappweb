@@ -4,6 +4,6 @@ export class Menu {
     id?:number;
     Title: string ;
     Active: boolean;
-   // Sections: Array<SectionMenu>;
+    Sections: Array<SectionMenu>;
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input} from '@angular/core';
 import {ManageMenuService}  from './manage-menu.service'
 import {Menu} from './classes/Menu'
+import {SectionMenu} from './classes/SectionMenu'
 import {Observable}  from 'rxjs/Observable'
 
 
@@ -16,9 +17,11 @@ import {Observable}  from 'rxjs/Observable'
 
 export class ManageMenuComponent implements OnInit {
 
-   @Input() SelectedMenu;
+  
  title = "Menu";
  isLoading = true;
+ selectedMenu :Menu;
+ Sections: SectionMenu[];
 
   menuList : Menu[];
 
@@ -42,7 +45,8 @@ export class ManageMenuComponent implements OnInit {
 
   selectMenu(menu) {
 
-    this.SelectedMenu = menu;
+    this.selectedMenu = menu;
+    this.Sections = menu.Sections;
     console.log("event  "+menu);
   }
 

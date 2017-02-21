@@ -2,8 +2,16 @@
     "Id": 1,
     "Title": "Menu Ordinario",
     "Active": true,
-    "Sections": [
+    "Sections": [{
+            "Id": 1,
+            "Title": "Sezione 1 "
 
+        },
+        {
+            "Id": 1,
+            "Title": "Sezione 2 "
+
+        }
     ]
 
 }, {
