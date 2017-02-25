@@ -47,7 +47,7 @@ export class ManageMenuComponent implements OnInit {
 
     this.selectedMenu = menu;
     this.Sections = menu.Sections;
-    console.log("event  "+menu);
+    console.log("event  "+menu.Title);
   }
 
 }

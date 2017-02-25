@@ -11,6 +11,8 @@ import {SectionMenu} from '../classes/SectionMenu'
 export class DetailMenuComponent implements OnInit {
 @Input() 
 sections: SectionMenu[];
+@Input()
+currentMenu : Menu;
   constructor() { }
 
   ngOnInit() {

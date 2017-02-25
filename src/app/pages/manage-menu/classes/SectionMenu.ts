@@ -1,7 +1,7 @@
 
 import {Article} from './Article';
 export class SectionMenu{
-    ID: number;
+    Id: number;
     Title: string;
     Articles: Array<Article>;
 }
